@@ -1,15 +1,21 @@
-def WordAmount():
-    myStr= "This is fun, really really fun.  I'm old."
+def WordAmount(myStr):
     numSpace = myStr.split(" ")
     print(len(numSpace))
     return WordAmount
 
-def ExtraSpaces(WordAmount):
-    WordAmount.find("  ")
-    return ExtraSpaces
+def ExtraSpaces(myStr):
+    return myStr.find("  ")
+ 
 
-def TrueAmount(WordAmount, ExtraSpaces):
+def FullAmount(WordAmount, ExtraSpaces):
     WordAmount - ExtraSpaces
-    print(TrueAmount)
+    print(WordAmount - ExtraSpaces)
+    return FullAmount
 
-
+def main():
+    myStr= "This is fun, really really fun.  I'm old."
+    WA = WordAmount(myStr)
+    print (WA)
+    DS = ExtraSpaces(myStr)
+    print (DS)
+main()
