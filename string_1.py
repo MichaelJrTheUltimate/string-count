@@ -16,6 +16,13 @@ def main():
     myStr= "This is fun, really really fun.  I'm old."
     WA = WordAmount(myStr)
     print (WA)
-    DS = ExtraSpaces(myStr)
-    print (DS)
+    ES = ExtraSpaces(myStr)
+    print (ES)
+    RS = myStr.replace("  ", " ")
+    print (RS)
+    TotalAmount = RS.split(" ")
+    print(len(TotalAmount))
+
+
+
 main()
