@@ -3,21 +3,10 @@ def WordAmount(myStr):
     print(len(numSpace))
     return WordAmount
 
-def ExtraSpaces(myStr):
-    return myStr.find("  ")
- 
-
-def FullAmount(WordAmount, ExtraSpaces):
-    WordAmount - ExtraSpaces
-    print(WordAmount - ExtraSpaces)
-    return FullAmount
-
 def main():
     myStr= "This is fun, really really fun.  I'm old."
     WA = WordAmount(myStr)
     print (WA)
-    ES = ExtraSpaces(myStr)
-    print (ES)
     RS = myStr.replace("  ", " ")
     print (RS)
     TotalAmount = RS.split(" ")
